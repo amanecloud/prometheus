@@ -10,7 +10,7 @@ build:
     image_template: prometheus-2.17
 
 deploy:
-    context: amanecloud/DEV
+    context: alpha-dev
     type: statefulset
     replicas: 1
     port:
