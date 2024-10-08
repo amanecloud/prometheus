@@ -3,7 +3,7 @@ app:
     code: prometheus
     notify: apatnaik@ecloudcontrol.com
 build:
-    version: 2.45
+    version: 2.17
     env: DEV
     build_file: none
     output_files: output/*.zip
