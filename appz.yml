@@ -1,7 +1,7 @@
 app:
-    name: mbk-prometheus
-    code: MBK-Prometheus
-    notify: apatnaik@ecloudcontrol.com
+    name: prometheus
+    code: prometheus
+    notify: appzdev@cloudbourne.com
 
 build:
     version: 2.17
