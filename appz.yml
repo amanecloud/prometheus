@@ -1,7 +1,8 @@
 app:
-    name: prometheus
-    code: prometheus
+    name: mbk-prometheus
+    code: MBK-Prometheus
     notify: apatnaik@ecloudcontrol.com
+
 build:
     version: 2.17
     env: DEV
@@ -10,20 +11,18 @@ build:
     image_template: prometheus-2.45
 
 deploy:
-    context: alpha-dev
+    context: alpha/DEV
     type: statefulset
     replicas: 1
     port:
     - 9090
+    ingress: none
 
 volumes:
   - claim: prometheus-data
     mount: /appz/data
     name: data
     size: 50Gi
-    matchLabels: false
-    
   
 properties:
-    revision : 3
-    
+    revision : 0
